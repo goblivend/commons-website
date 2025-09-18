@@ -163,6 +163,14 @@ html {
     position: relative;
 }
 
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active::after {
+    width: 100% !important;
+}
+
 .nav-link:hover {
     color: var(--primary-color);
 }
