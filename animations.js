@@ -5,23 +5,6 @@ document.querySelectorAll('.tag').forEach((tag, index) => {
     tag.style.animation = 'fadeInScale 0.5s ease forwards';
 });
 
-// Add fadeInScale animation
-const fadeInScaleStyle = document.createElement('style');
-fadeInScaleStyle.textContent = `
-    @keyframes fadeInScale {
-        from {
-            opacity: 0;
-            transform: scale(0.8);
-        }
-        to {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-`;
-document.head.appendChild(fadeInScaleStyle);
-
-
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
